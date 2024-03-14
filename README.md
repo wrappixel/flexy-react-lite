@@ -127,7 +127,7 @@ Flexy React Material Admin Dashboard
   -
   </td>
   <td>
-  6 Months Premium Support
+  1 Year Premium Support
   </td>
 </tr>
 </tbody>
