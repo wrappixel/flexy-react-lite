@@ -1,5 +1,5 @@
 
-# <a href="https://monster-admin-nextjs-free.vercel.app/">Flexy React Free</a>
+# <a href="https://flexy-react-free.netlify.app/dashboards/dashboard1">Flexy React Free</a>
 Flexy React Material Admin Dashboard
 
 <!-- Main image of Template -->
