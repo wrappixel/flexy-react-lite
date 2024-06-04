@@ -38,7 +38,7 @@ const Buynow = () => {
           </Typography>
           <Button
             color="success"
-            href="https://www.wrappixel.com/templates/flexy-react-admin-template/"
+            href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=33"
             fullWidth
             disableElevation
             variant="contained"

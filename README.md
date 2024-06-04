@@ -23,7 +23,7 @@ Flexy React Material Admin Dashboard
     <a href="https://flexy-react-free.netlify.app/dashboards/dashboard1">Live Preview</a>
   </td>
   <td>
-  <a href="https://demos.wrappixel.com/free-admin-templates/react/flexy-react-free/landingpage/index.html">Live Preview</a>
+  <a href="https://flexy-react-stylish.netlify.app/dashboards/dashboard1">Live Preview</a>
   </td>
 </tr>
 <tr>
@@ -31,7 +31,7 @@ Flexy React Material Admin Dashboard
     <a href="https://www.wrappixel.com/templates/free-material-ui-template/">Download Now</a>
   </td>
   <td>
-    <a href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/">Purchase Now</a>
+    <a href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=33">Purchase Now</a>
   </td>
 </tr>
 <tr>
@@ -135,12 +135,12 @@ Flexy React Material Admin Dashboard
 
 # Upgrade to Premium version
 
-<a target="_blank" href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2021/07/flexy-react-admin.jpg" alt="">
+<a target="_blank" href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=33">
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-react-admin-wpn.jpg" alt="">
 </a>
 <p>
   Checkout our premium version of Flexy react material Dashboard Template for lots more features and ready to use page templates.<br>
-  <a href="https://demos.wrappixel.com/free-admin-templates/react/flexy-react-free/landingpage/index.html">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/">Download</a>
+  <a href="https://flexy-react-stylish.netlify.app/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=33">Download</a>
 </p>
 
 <!-- Versions of Template -->
@@ -148,7 +148,7 @@ Flexy React Material Admin Dashboard
 <table>
 <thead>
 <tr>
-<th>Bootstrap</th>
+<th>React</th>
 <th>Angular</th>
 <th>Next Js</th>
 <th>Vue Js</th>
@@ -157,23 +157,23 @@ Flexy React Material Admin Dashboard
 <tbody>
 <tr>
 <td>
-  <a href="https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2021/05/flexy.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=33" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-react-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/2022/03/flexy-angular-pro.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-angular-material-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/04/nextjs-flexy.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-nextjs-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/flexy-vuetify-dashboard/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/03/fley-vue.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/flexy-vuetify-dashboard/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/flexy-vuetify-vuejs-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 </td>
