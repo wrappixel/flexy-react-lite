@@ -61,9 +61,9 @@ const ProductPerformance = () => {
                 <MenuItem value="">
                   <em>None</em>
                 </MenuItem>
-                <MenuItem value={10}>March 2021</MenuItem>
-                <MenuItem value={20}>April 2021</MenuItem>
-                <MenuItem value={30}>Jun 2021</MenuItem>
+                <MenuItem value={10}>March 2025</MenuItem>
+                <MenuItem value={20}>April 2025</MenuItem>
+                <MenuItem value={30}>Jun 2025</MenuItem>
               </Select>
             </FormControl>
           </Box>

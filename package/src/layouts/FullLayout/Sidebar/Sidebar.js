@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router";
 import {
   Box,
   Drawer,
@@ -56,6 +56,7 @@ const Sidebar = (props) => {
                   selected={pathDirect === item.href}
                   sx={{
                     mb: 1,
+                    color: "darkblue",
                     ...(pathDirect === item.href && {
                       color: "white",
                       backgroundColor: (theme) =>
