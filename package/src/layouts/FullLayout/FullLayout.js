@@ -6,10 +6,12 @@ import {
   Box,
 } from "@mui/material";
 import Header from "./Header/Header";
-import Sidebar from "./Sidebar/Sidebar";
 import Footer from "./Footer/Footer";
 import { TopbarHeight } from "../../assets/global/Theme-variable";
 import { Outlet } from "react-router";
+import NewSidebar from "./Sidebar/NewSidebar.js"
+// import CustomSidebar from "./Sidebar/CustomSidebarLayout";
+
 
 const MainWrapper = experimentalStyled("div")(({ theme }) => ({
   display: "flex",
@@ -47,18 +49,16 @@ const FullLayout = () => {
         toggleMobileSidebar={() => setMobileSidebarOpen(true)}
       />
 
-      <Sidebar
-        isSidebarOpen={isSidebarOpen}
+      <NewSidebar isSidebarOpen={isSidebarOpen}
         isMobileSidebarOpen={isMobileSidebarOpen}
-        onSidebarClose={() => setMobileSidebarOpen(false)}
-      />
+        onSidebarClose={() => setMobileSidebarOpen(false)} />
 
       <PageWrapper>
         <Container
-          maxWidth={false}
+          maxWidth={true}
           sx={{
             paddingTop: "20px",
-            paddingLeft: isSidebarOpen && lgUp ? "280px!important" : "",
+            maxWidth: "1200px",
           }}
         >
           <Box sx={{ minHeight: "calc(100vh - 170px)" }}>

@@ -66,7 +66,7 @@ const Header = (props) => {
           sx={{
             display: {
               lg: "none",
-              xs: "inline",
+              xs: "flex",
             },
           }}
         >

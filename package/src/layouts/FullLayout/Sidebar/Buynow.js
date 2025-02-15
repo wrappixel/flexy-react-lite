@@ -6,12 +6,12 @@ const Buynow = () => {
   //const customizer = useSelector((state)=> state.CustomizerReducer);
 
   return (
-    <Box pb={5} mt={5}>
+    <Box pb={5} mt={5} px={4}>
       <Box
         p={2}
         sx={{
           backgroundColor: (theme) => theme.palette.primary.light,
-          borderRadius: "10px",
+          borderRadius: "10px"
         }}
         style={{ position: "relative" }}
       >

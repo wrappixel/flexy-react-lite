@@ -1,117 +1,120 @@
-import React from "react";
-import { useLocation } from "react-router";
-import { Link, NavLink } from "react-router";
-import {
-  Box,
-  Drawer,
-  useMediaQuery,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-} from "@mui/material";
-import { SidebarWidth } from "../../../assets/global/Theme-variable";
-import LogoIcon from "../Logo/LogoIcon";
-import Menuitems from "./data";
-import Buynow from "./Buynow";
+import { useMediaQuery, Box, Drawer } from '@mui/material';
+import SidebarItems from './SidebarItems';
+
+import { Sidebar, Logo } from 'react-mui-sidebar';
+// import logo from '../../../assets/images/logos/dark1-logo.svg'
 
 const Sidebar = (props) => {
-  const [open, setOpen] = React.useState(true);
-  const { pathname } = useLocation();
-  const pathDirect = pathname;
+
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up("lg"));
+  const sidebarWidth = '270px';
 
-  const handleClick = (index) => {
-    if (open === index) {
-      setOpen((prevopen) => !prevopen);
-    } else {
-      setOpen(index);
-    }
+  // Custom CSS for short scrollbar
+  const scrollbarStyles = {
+    '&::-webkit-scrollbar': {
+      width: '7px',
+
+    },
+    '&::-webkit-scrollbar-thumb': {
+      backgroundColor: '#eff2f7',
+      borderRadius: '15px',
+    },
   };
+   return <>Red</>
 
-  const SidebarContent = (
-    <Box sx={{ p: 3, height: "calc(100vh - 40px)" }}>
-      <Link to="/">
-        <Box sx={{ display: "flex", alignItems: "Center" }}>
-          <LogoIcon />
-        </Box>
-      </Link>
+  // if (lgUp) {
+  //   return (
+  //     <Box
+  //       sx={{
+  //         width: sidebarWidth,
+  //         flexShrink: 0,
+  //       }}
+  //     >
+  //       {/* ------------------------------------------- */}
+  //       {/* Sidebar for desktop */}
+  //       {/* ------------------------------------------- */}
+  //       <Drawer
+  //         anchor="left"
+  //         open={props.isSidebarOpen}
+  //         variant="permanent"
+  //         PaperProps={{
+  //           sx: {
+  //             boxSizing: 'border-box',
+  //             ...scrollbarStyles,
+  //           },
+  //         }}
+  //       >
+  //         {/* ------------------------------------------- */}
+  //         {/* Sidebar Box */}
+  //         {/* ------------------------------------------- */}
+  //         <Box
+  //           sx={{
+  //             height: '100%',
+  //           }}
+  //         >
 
-      <Box>
-        <List
-          sx={{
-            mt: 4,
-          }}
-        >
-          {Menuitems.map((item, index) => {
-            //{/********SubHeader**********/}
+  //           <Sidebar
+  //             width={'270px'}
+  //             collapsewidth="80px"
+  //             open={props.isSidebarOpen}
+  //             themeColor="#5d87ff"
+  //             themeSecondaryColor="#49beff"
+  //             showProfile={false}
+  //           >
+  //             {/* ------------------------------------------- */}
+  //             {/* Logo */}
+  //             {/* ------------------------------------------- */}
+  //             <Logo img={logo} />
+  //             <Box>
+  //               {/* ------------------------------------------- */}
+  //               {/* Sidebar Items */}
+  //               {/* ------------------------------------------- */}
+  //               <SidebarItems />
+  //               <Upgrade />
+  //             </Box>
+  //           </Sidebar >
+  //         </Box>
+  //       </Drawer >
+  //     </Box >
+  //   );
+  // }
+  // return (
+  //   <Drawer
+  //     anchor="left"
+  //     open={props.isMobileSidebarOpen}
+  //     onClose={props.onSidebarClose}
+  //     variant="temporary"
+  //     PaperProps={{
+  //       sx: {
 
-            return (
-              <List component="li" disablePadding key={item.title}>
-                <ListItem
-                  onClick={() => handleClick(index)}
-                  button
-                  component={NavLink}
-                  to={item.href}
-                  selected={pathDirect === item.href}
-                  sx={{
-                    mb: 1,
-                    color: "darkblue",
-                    ...(pathDirect === item.href && {
-                      color: "white",
-                      backgroundColor: (theme) =>
-                        `${theme.palette.primary.main}!important`,
-                    }),
-                  }}
-                >
-                  <ListItemIcon
-                    sx={{
-                      ...(pathDirect === item.href && { color: "white" }),
-                    }}
-                  >
-                    <item.icon width="20" height="20" />
-                  </ListItemIcon>
-                  <ListItemText>{item.title}</ListItemText>
-                </ListItem>
-              </List>
-            );
-          })}
-        </List>
-      </Box>
-      <Buynow />
-    </Box>
-  );
-  if (lgUp) {
-    return (
-      <Drawer
-        anchor="left"
-        open={props.isSidebarOpen}
-        variant="persistent"
-        PaperProps={{
-          sx: {
-            width: SidebarWidth,
-          },
-        }}
-      >
-        {SidebarContent}
-      </Drawer>
-    );
-  }
-  return (
-    <Drawer
-      anchor="left"
-      open={props.isMobileSidebarOpen}
-      onClose={props.onSidebarClose}
-      PaperProps={{
-        sx: {
-          width: SidebarWidth,
-        },
-      }}
-      variant="temporary"
-    >
-      {SidebarContent}
-    </Drawer>
-  );
+  //         boxShadow: (theme) => theme.shadows[8],
+  //         ...scrollbarStyles,
+  //       },
+  //     }}
+  //   >
+  //     <Sidebar
+  //       width={'270px'}
+  //       collapsewidth="80px"
+  //       isCollapse={false}
+  //       mode="light"
+  //       direction="ltr"
+  //       themeColor="#5d87ff"
+  //       themeSecondaryColor="#49beff"
+  //       showProfile={false}
+  //     >
+  //       {/* ------------------------------------------- */}
+  //       {/* Logo */}
+  //       {/* ------------------------------------------- */}
+
+  //       {/* <Logo img={logo} /> */}
+
+  //       {/* ------------------------------------------- */}
+  //       {/* Sidebar For Mobile */}
+  //       {/* ------------------------------------------- */}
+  //       <SidebarItems />
+  //       {/* <Upgrade /> */}
+  //     </Sidebar>
+  //   </Drawer>
+  // );
 };
-
 export default Sidebar;
