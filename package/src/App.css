@@ -1,0 +1,18 @@
+.css-9kc04k-MuiToolbar-root{
+    padding: 0px !important;
+}
+.css-1396euz-MuiPaper-root-MuiDrawer-paper{
+    top: 77px !important;
+}
+.css-14ff4nu-MuiPaper-root-MuiAppBar-root{
+    top: 70px !important;
+}
+
+.css-2mz2om-MuiPaper-root-MuiAppBar-root{
+    top: 144px !important
+}
+@media only screen and (max-width:1200){
+    .css-2mz2om-MuiPaper-root-MuiAppBar-root{
+        top: 80px !important
+    }
+}

@@ -8,10 +8,12 @@ import {
   List,
   styled,
   ListItemText,
+  Chip,
+  Box,
   useTheme
 } from '@mui/material';
 
-const NavItem = ({ item, level, pathDirect, onClick }) => {
+const NavItem = ({ item, level, pathDirect, onClick,chip }) => {
   const Icon = item.icon;
   const theme = useTheme();
   const itemIcon = <Icon stroke={1.5} size="1.3rem" />;
@@ -23,7 +25,7 @@ const NavItem = ({ item, level, pathDirect, onClick }) => {
     borderRadius: '8px',
     backgroundColor: level > 1 ? 'transparent !important' : 'inherit',
     color:
-      theme.palette.text.secondary,
+      theme.palette.text.dark,
     paddingLeft: '10px',
     '&:hover': {
       backgroundColor: theme.palette.primary.light,
@@ -60,9 +62,27 @@ const NavItem = ({ item, level, pathDirect, onClick }) => {
         >
           {itemIcon}
         </ListItemIcon>
-        <ListItemText>
-          <>{item.title}</>
+        <ListItemText sx={{marginY:"0px"}} >
+        <Box sx={{maxWidth:"90px", overflowX:"hidden" , textOverflow:"ellipsis"}} >{item.title}</Box>
         </ListItemText>
+        {!chip ? null : (
+          <Chip
+            color={"secondary"}
+            variant={'filled'}
+            size="small"
+            label={"Pro"}
+            sx={{
+              height: 'fit-content', 
+             
+              borderRadius:"5px",
+              '& .MuiChip-label': {
+                fontSize:"11px",
+                paddingY:"4px",
+                paddingX:"10px",
+              },
+            }}
+          />
+        )}
       </ListItemStyled>
     </List>
   );

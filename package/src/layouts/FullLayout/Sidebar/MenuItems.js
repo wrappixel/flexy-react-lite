@@ -1,8 +1,83 @@
-import {
-  IconAperture, IconCopy, IconLayoutDashboard, IconLogin, IconMoodHappy, IconTypography, IconUserPlus,IconAlignBoxLeftBottom,IconCheckbox,IconRadar,IconSlideshow,IconCaretUpDown,IconTable
-} from '@tabler/icons-react';
 
 import { uniqueId } from 'lodash';
+
+import {
+  IconCopy, IconLayoutDashboard, IconMoodHappy, IconTypography,IconAlignBoxLeftBottom,IconCheckbox,IconRadar,IconSlideshow,IconCaretUpDown,IconTable,IconUsers,IconList,
+  IconAward,
+  IconClipboardText,
+  IconExclamationCircle,
+  IconGitPullRequest,
+  IconFeather,
+  IconClock,
+  IconBoxMultiple,
+  IconPoint,
+  IconAlertCircle,
+  IconNotes,
+  IconCalendar,
+  IconMail,
+  IconTicket,
+  IconCurrencyDollar,
+  IconApps,
+  IconFileDescription,
+  IconFileDots,
+  IconFiles,
+  IconBan,
+  IconEdit,
+  IconStar,
+  IconMoodSmile,
+  IconBorderAll,
+  IconBorderHorizontal,
+  IconBorderInner,
+  IconBorderVertical,
+  IconBorderTop,
+  IconUserCircle,
+  IconPackage,
+  IconMessage2,
+  IconBasket,
+  IconChartLine,
+  IconChartArcs,
+  IconChartCandle,
+  IconChartArea,
+  IconChartDots,
+  IconChartDonut3,
+  IconChartRadar,
+  IconLogin,
+  IconUserPlus,
+  IconRotate,
+  IconBox,
+  IconShoppingCart,
+  IconAperture,
+  IconLayout,
+  IconSettings,
+  IconHelp,
+  IconZoomCode,
+  IconBoxAlignBottom,
+  IconBoxAlignLeft,
+  IconBorderStyle2,
+  IconAppWindow,
+  IconNotebook,
+  IconFileCheck,
+  IconChartHistogram,
+  IconChartPie2,
+  IconChartScatter,
+  IconUser,
+  IconChartPpf,
+  IconChartArcs3,
+  IconListTree,
+  IconCompass,
+  IconCodePlus,
+  IconBrandCodepen,
+  IconSquareCheck,
+  IconCircleCheck,
+  IconGitCommit,
+  IconToggleLeft,
+  IconFilePlus,
+  IconDisc,
+  IconDotsCircleHorizontal,
+  IconRefresh,
+  IconAlertTriangle,
+} from '@tabler/icons-react';
+
 
 const Menuitems = [
   {
@@ -15,6 +90,335 @@ const Menuitems = [
     title: 'Dashboard',
     icon: IconLayoutDashboard,
     href: '/dashboards/dashboard1',
+  },
+
+  {
+    id: uniqueId(),
+    title: 'Modern',
+    icon: IconAperture,
+    href: 'https://modernize-react.adminmart.com/dashboards/dashboard3',
+    chip: 'Pro',
+    chipColor: 'secondary',
+  },
+  {
+    id: uniqueId(),
+    title: 'Analytical',
+    icon: IconAperture,
+    href: 'https://modernize-react.adminmart.com/dashboards/dashboard1',
+    chip: 'Pro',
+    chipColor: 'secondary',
+  },
+  {
+    id: uniqueId(),
+    title: 'eCommerce',
+    icon: IconShoppingCart,
+    href: 'https://modernize-react.adminmart.com/dashboards/dashboard2',
+    chip: 'Pro',
+  },
+  {
+    navlabel: true,
+    subheader: 'Apps',
+  },
+
+  {
+    id: uniqueId(),
+    title: 'Chats',
+    icon: IconMessage2,
+    href: 'https://flexy-react-main.netlify.app/chats',
+    chip: 'Pro',
+  },
+  {
+    id: uniqueId(),
+    title: 'Notes',
+    icon: IconNotes,
+    href: 'https://flexy-react-main.netlify.app/notes',
+    chip: 'Pro',
+  },
+  {
+    id: uniqueId(),
+    title: 'Calendar',
+    icon: IconCalendar,
+    href: 'https://flexy-react-main.netlify.app/calendar',
+    chip: 'Pro',
+  },
+  {
+    id: uniqueId(),
+    title: 'Email',
+    icon: IconMail,
+    href: 'https://flexy-react-main.netlify.app/email',
+    chip: 'Pro',
+  },
+  {
+    id: uniqueId(),
+    title: 'Customers',
+    icon: IconUsers,
+    href: 'https://flexy-react-main.netlify.app/customers/lists',
+    chip: 'Pro',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'Lists',
+        icon: IconList,
+        href: 'https://flexy-react-main.netlify.app/customers/lists',
+        chip: 'Pro',
+      },
+      {
+        id: uniqueId(),
+        title: 'Edit',
+        icon: IconEdit,
+        href: 'https://flexy-react-main.netlify.app/customers/edit',
+        chip: 'Pro',
+      },
+    ],
+  },
+
+  {
+    navlabel: true,
+    subheader: 'Pages',
+  },
+  {
+    id: uniqueId(),
+    title: 'Shop',
+    icon: IconUsers,
+    href: 'https://flexy-react-main.netlify.app/shop/lists',
+    chip: 'Pro',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'Listing',
+        icon: IconList,
+        href: 'https://flexy-react-main.netlify.app/shop/lists',
+        chip: 'Pro',
+      },
+      {
+        id: uniqueId(),
+        title: 'Detail',
+        icon: IconClipboardText,
+        href: 'https://flexy-react-main.netlify.app/customers/edit',
+        chip: 'Pro',
+      },
+    ],
+  },
+  {
+    id: uniqueId(),
+    title: 'Alert',
+    icon: IconExclamationCircle,
+    href: 'https://flexy-react-main.netlify.app/alert',
+    chip: 'Pro',
+  },
+  {
+    id: uniqueId(),
+    title: 'User Profile',
+    icon: IconUser,
+    href: 'https://flexy-react-main.netlify.app/user-profile',
+    chip: 'Pro',
+  },
+  {
+    id: uniqueId(),
+    title: 'Quill Editor',
+    icon: IconEdit,
+    href: 'https://flexy-react-main.netlify.app/quill-editor',
+    chip: 'Pro',
+  },
+  {
+     id: uniqueId(),
+    title: 'Treeview',
+    icon: IconGitPullRequest,
+    href: '/treeview',
+    chip: 'Pro',
+  },
+  {
+     id: uniqueId(),
+    title: 'Pricing',
+    icon: IconCurrencyDollar,
+    href: '/pricing',
+    chip: 'Pro',
+  },
+  {
+     id: uniqueId(),
+    title: 'Typography',
+    icon: IconTypography,
+    href: '/typography',
+    chip: 'Pro',
+  },
+  {
+     id: uniqueId(),
+    title: 'Feather Icons',
+    icon: IconFeather,
+    href: '/react-icons',
+    chip: 'Pro',
+  },
+  {
+     id: uniqueId(),
+    title: 'Timeline',
+    icon: IconClock,
+    href: '/timeline',
+    chip: 'Pro',
+  },
+  {
+    navlabel: true,
+    subheader: 'Forms',
+  },
+  {
+    id: uniqueId(),
+    title: 'Form Elements',
+    icon: IconBox,
+    href: 'https://flexy-react-main.netlify.app/form-elements/autocomplete',
+    chip: 'Pro',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'Autocomplete',
+        icon: IconCompass,
+        href: 'https://flexy-react-main.netlify.app/shop/lists',
+        chip: 'Pro',
+      },
+      {
+        id: uniqueId(),
+        title: 'Button',
+        icon: IconBrandCodepen,
+        href: 'https://flexy-react-main.netlify.app/customers/edit',
+        chip: 'Pro',
+      },
+      {
+        id: uniqueId(),
+        title: 'Checkbox',
+        icon: IconSquareCheck,
+        href: 'https://flexy-react-main.netlify.app/form-elements/checkbox',
+        chip: 'Pro',
+      },
+      {
+        id: uniqueId(),
+        title: 'Radio',
+        icon: IconCircleCheck,
+        href: 'https://flexy-react-main.netlify.app/form-elements/radio',
+        chip: 'Pro',
+      },
+      {
+        id: uniqueId(),
+        title: 'Date Time',
+        icon: IconCalendar,
+        href: 'https://flexy-react-main.netlify.app/form-elements/date-time',
+        chip: 'Pro',
+      },
+      {
+        id: uniqueId(),
+        title: 'Slider',
+        icon: IconGitCommit,
+        href: 'https://flexy-react-main.netlify.app/form-elements/slider',
+        chip: 'Pro',
+      },
+      {
+        id: uniqueId(),
+        title: 'Switch',
+        icon: IconToggleLeft,
+        href: 'https://flexy-react-main.netlify.app/form-elements/switch',
+        chip: 'Pro',
+      },
+    ],
+  },
+  {
+    id: uniqueId(),
+    title: 'Form Layout',
+    icon: IconFiles,
+    href: 'https://flexy-react-main.netlify.app/form-layouts/form-layouts',
+    chip: "Pro"
+  },
+  {
+    id: uniqueId(),
+    title: 'Form Custom',
+    icon: IconFilePlus,
+    href: 'https://flexy-react-main.netlify.app/form-layouts/form-custom',
+    chip: "Pro"
+  },
+  {
+    id: uniqueId(),
+    title: 'Form Wizard',
+    icon: IconBrandCodepen,
+    href: 'https://flexy-react-main.netlify.app/form-layouts/form-wizard',
+    chip: "Pro"
+  },
+  {
+    navlabel: true,
+    subheader: 'TABLES',
+  },
+  {
+    title: 'Tables',
+    icon: IconLayout,
+    href: 'https://flexy-react-main.netlify.app/form-elements/tables/basic-table',
+    chip: 'Pro',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'Basic Table',
+        icon: IconDisc,
+        href: 'https://flexy-react-main.netlify.app/tables/basic-table',
+        chip: "Pro"
+      },
+      {
+        id: uniqueId(),
+        title: 'Pagination Table',
+        icon: IconDisc,
+        href: 'https://flexy-react-main.netlify.app/tables/pagination-table',
+        chip: "Pro"
+      },
+      {
+        id: uniqueId(),
+        title: 'Enhanced Table',
+        icon: IconDisc,
+        href: 'https://flexy-react-main.netlify.app/tables/enhanced-table',
+        chip: "Pro"
+      },
+      {
+        id: uniqueId(),
+        title: 'Collapsible Table',
+        icon: IconDisc,
+        href: 'https://flexy-react-main.netlify.app/tables/collapsible-table',
+        chip: "Pro"
+      },
+      {
+        id: uniqueId(),
+        title: 'Fixed Header Table',
+        icon: IconDisc,
+        href: 'https://flexy-react-main.netlify.app/tables/fixed-header-table',
+        chip: "Pro"
+      },
+    ],
+  },
+  {
+    navlabel: true,
+    subheader: 'AUTHENTICATION',
+    icon: IconDotsCircleHorizontal,
+    href: 'https://flexy-react-main.netlify.app/form-elements/auth/login',
+    chip: 'Pro',
+  },
+  {
+    id: uniqueId(),
+    title: 'Log in',
+    icon: IconLogin,
+    href: 'https://flexy-react-main.netlify.app/auth/login',
+    chip: "Pro",
+  },
+  {
+    id: uniqueId(),
+    title: 'Register',
+    icon: IconUserPlus,
+    href: 'https://flexy-react-main.netlify.app/auth/register',
+    chip: "Pro",
+  },
+  {
+    id: uniqueId(),
+    title: 'Reset Password',
+    icon: IconRefresh,
+    href: 'https://flexy-react-main.netlify.app/auth/reset-password',
+    chip: "Pro",
+  },
+  {
+    id: uniqueId(),
+    title: 'Error',
+    icon: IconAlertTriangle,
+    href: 'https://flexy-react-main.netlify.app/404',
+    chip: "Pro",
   },
   {
     navlabel: true,
@@ -62,7 +466,14 @@ const Menuitems = [
     icon: IconTable,
     href: '/tables/basic-table',
   },
-  
 ];
 
 export default Menuitems;
+
+
+
+
+
+
+
+

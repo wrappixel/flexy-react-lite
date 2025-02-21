@@ -15,14 +15,16 @@ const baseTheme = createTheme({
   direction: "ltr",
   palette: {
     primary: {
-      main: "#1a97f5",
-      light: "#e6f4ff",
+      main: "#1e4db7",
+      light: "#ddebff",
+      transparent:"#ffffff00"
     },
     secondary: {
-      main: "#1e4db7",
+      main: "#1a97f5",
     },
     background: {
       default: "#fff",
+      dark:"#2a3547"
     },
     success: {
       main: "#39cb7f",
@@ -41,6 +43,7 @@ const baseTheme = createTheme({
     text: {
       secondary: "#777e89",
       danger: "#fc4b6c",
+      dark: "#11142C",
     },
   },
   shape: {

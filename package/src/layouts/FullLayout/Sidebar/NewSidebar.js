@@ -58,8 +58,8 @@ const NewSidebar = (props) => {
               width={'270px'}
               collapsewidth="80px"
               open={props.isSidebarOpen}
-              themeColor="#5d87ff"
-              themeSecondaryColor="#49beff"
+              themeColor="#1e4db7"
+              themeSecondaryColor="#1e4db7"
               showProfile={false}
             >
               {/* ------------------------------------------- */}

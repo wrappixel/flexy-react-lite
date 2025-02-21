@@ -10,6 +10,8 @@ import Footer from "./Footer/Footer";
 import { TopbarHeight } from "../../assets/global/Theme-variable";
 import { Outlet } from "react-router";
 import NewSidebar from "./Sidebar/NewSidebar.js"
+import Topbar from "./Header/Topbar.js";
+import "../../App.css"
 // import CustomSidebar from "./Sidebar/CustomSidebarLayout";
 
 
@@ -39,6 +41,11 @@ const FullLayout = () => {
   const [isMobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up("lg"));
   return (
+    <>
+          {/* ------------------------------------------- */}
+      {/* Topbar */}
+      {/* ------------------------------------------- */}
+      <Topbar/>
     <MainWrapper>
       <Header
         sx={{
@@ -68,6 +75,7 @@ const FullLayout = () => {
         </Container>
       </PageWrapper>
     </MainWrapper>
+    </>
   );
 };
 
