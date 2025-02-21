@@ -24,8 +24,8 @@ header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiAppBar-root.MuiAp
     top: 70px !important;
 }
 header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionFixed.mui-fixed.css-1fyui8k {
-    top: 144px;
+    top: 144px !important;
 }
 .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.css-lg2an{
-    padding: 0px;
+    padding: 0px !important;
 }
