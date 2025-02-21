@@ -16,3 +16,15 @@
         top: 80px !important
     }
 }
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.css-xohfr9{
+    top: 70px !important;
+}
+header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionFixed.mui-fixed.css-7ihjw8{
+    top: 70px !important;
+}
+@media only screen and (max-width:600){
+    header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiAppBar-root.MuiAppBar-colorPrimary.MuiAppBar-positionFixed.mui-fixed.css-7ihjw8{
+        top: 144px !important;
+    }
+}
