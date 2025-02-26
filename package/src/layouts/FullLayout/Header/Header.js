@@ -146,18 +146,15 @@ const Header = (props) => {
         </Menu>
         <Box flexGrow={1} />
 
-        {/* ------------------------------------------- */}
-        {/* Notifications Dropdown */}
-        {/* ------------------------------------------- */}
-        <IconButton
-          aria-label="menu"
-          color="inherit"
-          aria-controls="notification-menu"
-          aria-haspopup="true"
-          onClick={handleClick}
-        >
-          <NotificationsNoneOutlinedIcon width="20" height="20" />
-        </IconButton>
+
+        <Button
+                    color="primary"
+                    href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376"
+                    disableElevation
+                    variant="contained"
+                  >
+                    Check Pro Template
+                  </Button>
         <Menu
           id="notification-menu"
           anchorEl={anchorEl}
@@ -184,6 +181,7 @@ const Header = (props) => {
         {/* ------------------------------------------- */}
         {/* Profile Dropdown */}
         {/* ------------------------------------------- */}
+
         <Box
           sx={{
             width: "1px",
@@ -215,6 +213,7 @@ const Header = (props) => {
             />
           </Box>
         </Button>
+
         <Menu
           id="profile-menu"
           anchorEl={anchorEl4}
