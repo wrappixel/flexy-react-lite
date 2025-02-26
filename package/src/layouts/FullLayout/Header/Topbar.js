@@ -62,7 +62,7 @@ const Topbar = (props) => {
               </Stack>
         <Box flexGrow={1} />
         <Stack spacing={1} direction="row" alignItems="center" sx={{ flexWrap: 'wrap', justifyContent:"center" , gap:{xs:"10px" , lg:"0px"} , padding:{xs:"0px 0px 10px 0px" , lg:"0px 0px"} }}>
-        <Typography variant="h5" sx={{ color: (theme) => theme.palette.primary.contrastText }} >Check Modernize Premium Version</Typography>
+        <Typography variant="h5" sx={{ color: (theme) => theme.palette.primary.contrastText }} >Check Flexy Premium Version</Typography>
         <LivePreviewDropdown/>
         <BuyNowDropdown/>
         </Stack>

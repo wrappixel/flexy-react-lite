@@ -77,6 +77,7 @@ const NewSidebar = (props) => {
                 <SidebarItems />
                  <Buynow/>
               </Box>
+              <Box sx={{padding:"40px"}} ></Box>
             </Sidebar >
           </Box>
         </Drawer >

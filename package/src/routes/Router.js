@@ -4,6 +4,7 @@ import { createBrowserRouter, Navigate } from "react-router";
 
 /****Layouts*****/
 const FullLayout = lazy(() => import("../layouts/FullLayout/FullLayout.js"));
+const BlankLayout = lazy(() => import('../layouts/blank/BlankLayout.js'));
 /****End Layouts*****/
 
 
@@ -22,6 +23,9 @@ const ExCheckbox = lazy(() => import("../views/FormElements/ExCheckbox.js"));
 const ExRadio = lazy(() => import("../views/FormElements/ExRadio.js"));
 const ExSlider = lazy(() => import("../views/FormElements/ExSlider.js"));
 const ExSwitch = lazy(() => import("../views/FormElements/ExSwitch.js"));
+const Error = lazy(() => import('../views/authentication/Error'));
+const Register = lazy(() => import('../views/authentication/Register.jsx'));
+const Login = lazy(() => import('../views/authentication/Login.jsx'));
 
 // form layouts
 const FormLayouts = lazy(() => import("../views/FormLayouts/FormLayouts.js"));
@@ -43,6 +47,16 @@ const ThemeRoutes = [
       { path: "/form-elements/radio", element: <ExRadio /> },
       { path: "/form-elements/slider", element: <ExSlider /> },
       { path: "/form-elements/switch", element: <ExSwitch /> },
+    ],
+  },
+  {
+    path: '/auth',
+    element: <BlankLayout />,
+    children: [
+      { path: '404', element: <Error /> },
+      { path: '/auth/register', element: <Register /> },
+      { path: '/auth/login', element: <Login /> },
+      { path: '*', element: <Navigate to="/auth/404" /> },
     ],
   },
 ];

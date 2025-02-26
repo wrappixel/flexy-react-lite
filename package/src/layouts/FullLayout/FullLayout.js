@@ -26,7 +26,8 @@ const PageWrapper = experimentalStyled("div")(({ theme }) => ({
   flex: "1 1 auto",
   overflow: "hidden",
 
-  backgroundColor: theme.palette.background.default,
+
+  backgroundColor: theme.palette.secondary.light,
   [theme.breakpoints.up("lg")]: {
     paddingTop: TopbarHeight,
   },
@@ -46,7 +47,7 @@ const FullLayout = () => {
       {/* Topbar */}
       {/* ------------------------------------------- */}
       <Topbar/>
-    <MainWrapper>
+    <MainWrapper sx={{backgroundColor:"#000000"}}>
       <Header
         sx={{
           paddingLeft: isSidebarOpen && lgUp ? "265px" : "",
@@ -64,11 +65,11 @@ const FullLayout = () => {
         <Container
           maxWidth={true}
           sx={{
-            paddingTop: "20px",
+            paddingTop: "60px",
             maxWidth: "1200px",
           }}
         >
-          <Box sx={{ minHeight: "calc(100vh - 170px)" }}>
+          <Box sx={{ minHeight: "calc(100vh - 170px)" , paddingTop:"30px"}} >
             <Outlet />
           </Box>
           <Footer />

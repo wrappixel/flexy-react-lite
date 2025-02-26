@@ -29,3 +29,6 @@ header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiAppBar-root.MuiAp
 .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.css-lg2an{
     padding: 0px !important;
 }
+body{
+    margin: 0 !important;
+}

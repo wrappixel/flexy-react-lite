@@ -3,7 +3,7 @@ import { Box, Button, Typography } from "@mui/material";
 import sidebarBuynow from "../../../assets/images/backgrounds/sidebar-buynow.png";
 
 const Buynow = () => {
-  //const customizer = useSelector((state)=> state.CustomizerReducer);
+
 
   return (
     <Box pb={5} mt={5} px={4}>
@@ -37,7 +37,7 @@ const Buynow = () => {
             Built with <br /> Material-UI
           </Typography>
           <Button
-            color="success"
+            color="secondary"
             href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376"
             fullWidth
             disableElevation
