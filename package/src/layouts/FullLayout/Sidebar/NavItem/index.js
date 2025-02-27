@@ -45,12 +45,11 @@ const NavItem = ({ item, level, pathDirect, onClick,chip }) => {
     <List component="li" disablePadding key={item.id}>
       <ListItemStyled
         button
-        component={item.external ? 'a' : NavLink}
+        component={item.external ? NavLink : NavLink}
         to={item.href}
-        href={item.external ? item.href : ''}
         disabled={item.disabled}
         selected={pathDirect === item.href}
-        target={item.external ? '_blank' : ''}
+        target={item.chip ? '_blank' : '_self'}
         onClick={onClick}
       >
         <ListItemIcon

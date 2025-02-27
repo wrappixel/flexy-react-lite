@@ -2,11 +2,7 @@ import React from "react";
 //import { Link } from 'react-router';
 
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
-import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import AddToPhotosOutlinedIcon from '@mui/icons-material/AddToPhotosOutlined';
-import PersonAddOutlinedIcon from '@mui/icons-material/PersonAddOutlined';
-import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
-import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
 
 import {
   AppBar,
@@ -22,28 +18,19 @@ import {
 } from "@mui/material";
 
 import userimg from "../../../assets/images/users/user.jpg";
+import Notification from "./Notification";
 
 const Header = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
 
   const handleClose = () => {
     setAnchorEl(null);
   };
 
   // 4
-  const [anchorEl4, setAnchorEl4] = React.useState(null);
+  const [_anchorEl4, setAnchorEl4] = React.useState(null);
 
-  const handleClick4 = (event) => {
-    setAnchorEl4(event.currentTarget);
-  };
-
-  const handleClose4 = () => {
-    setAnchorEl4(null);
-  };
 
   // 5
   const [anchorEl5, setAnchorEl5] = React.useState(null);
@@ -89,13 +76,20 @@ const Header = (props) => {
           onClose={handleClose5}
           anchorOrigin={{ horizontal: "left", vertical: "bottom" }}
           transformOrigin={{ horizontal: "left", vertical: "top" }}
-          sx={{
+          sx={(theme) => ({
             "& .MuiMenu-paper": {
               width: "250px",
-              right: 0,
-              top: "70px !important",
+              [theme.breakpoints.down("sm")]: {
+               top: "60px"
+              },
+              [theme.breakpoints.up("md")]: {
+                 top: "100px"
+              },
+              [theme.breakpoints.up("lg")]: {
+                top: "100px"
+              },
             },
-          }}
+          })}
         >
           <MenuItem onClick={handleClose5}>
             <Avatar
@@ -190,81 +184,8 @@ const Header = (props) => {
             ml: 1,
           }}
         ></Box>
-        <Button
-          aria-label="menu"
-          color="inherit"
-          aria-controls="profile-menu"
-          aria-haspopup="true"
-          onClick={handleClick4}
-        >
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <Avatar
-              src={userimg}
-              alt={userimg}
-              sx={{
-                width: "30px",
-                height: "30px",
-              }}
-            />
-          </Box>
-        </Button>
+        <Notification/>
 
-        <Menu
-          id="profile-menu"
-          anchorEl={anchorEl4}
-          keepMounted
-          open={Boolean(anchorEl4)}
-          onClose={handleClose4}
-          anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
-          transformOrigin={{ horizontal: "right", vertical: "top" }}
-          sx={{
-            "& .MuiMenu-paper": {
-              width: "250px",
-              right: 0,
-              top: "70px !important",
-            },
-          }}
-        >
-          <MenuItem onClick={handleClose4}>
-            <Avatar
-              sx={{
-                width: "35px",
-                height: "35px",
-              }}
-            />
-            <Box
-              sx={{
-                ml: 2,
-              }}
-            >
-              My account
-            </Box>
-          </MenuItem>
-          <Divider />
-          <MenuItem onClick={handleClose4}>
-            <ListItemIcon>
-              <PersonAddOutlinedIcon fontSize="small" />
-            </ListItemIcon>
-            Add another account
-          </MenuItem>
-          <MenuItem onClick={handleClose4}>
-            <ListItemIcon>
-              <SettingsOutlinedIcon fontSize="small" />
-            </ListItemIcon>
-            Settings
-          </MenuItem>
-          <MenuItem onClick={handleClose4}>
-            <ListItemIcon>
-              <LogoutOutlinedIcon fontSize="small" />
-            </ListItemIcon>
-            Logout
-          </MenuItem>
-        </Menu>
       </Toolbar>
     </AppBar>
   );

@@ -79,6 +79,7 @@ const NavCollapse = ({ menu, level, pathWithoutLastPart, pathDirect, onClick, hi
           pathDirect={pathDirect}
           hideMenu={hideMenu}
           onClick={onClick}
+          chip={item.chip}
         />
       );
     }

@@ -41,9 +41,10 @@ const Buynow = () => {
             href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376"
             fullWidth
             disableElevation
+            sx={{width:"fit-content"}}
             variant="contained"
           >
-            Check Pro Version
+            Upgrade
           </Button>
         </Box>
       </Box>
