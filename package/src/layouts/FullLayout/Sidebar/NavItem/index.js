@@ -62,17 +62,17 @@ const NavItem = ({ item, level, pathDirect, onClick,chip }) => {
           {itemIcon}
         </ListItemIcon>
         <ListItemText sx={{marginY:"0px"}} >
-        <Box sx={{maxWidth:"90px", overflowX:"hidden" , textOverflow:"ellipsis"}} >{item.title}</Box>
+        <Box sx={{maxWidth:"110px", overflowX:"hidden" , textOverflow:"ellipsis"}} >{item.title}</Box>
         </ListItemText>
         {!chip ? null : (
           <Chip
-            color={"secondary"}
             variant={'filled'}
             size="small"
             label={"Pro"}
             sx={{
-              height: 'fit-content', 
-             
+              backgroundColor: 'secondary.light',
+              color: 'secondary.main',
+              height: 'fit-content',              
               borderRadius:"5px",
               '& .MuiChip-label': {
                 fontSize:"11px",

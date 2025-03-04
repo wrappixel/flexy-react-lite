@@ -55,6 +55,9 @@ const Header = (props) => {
               lg: "none",
               xs: "flex",
             },
+            'svg': {
+              fill: 'text.primary'
+            }
           }}
         >
           <MenuOutlinedIcon width="20" height="20" />
@@ -80,10 +83,10 @@ const Header = (props) => {
             "& .MuiMenu-paper": {
               width: "250px",
               [theme.breakpoints.down("sm")]: {
-               top: "60px"
+                top: "60px"
               },
               [theme.breakpoints.up("md")]: {
-                 top: "100px"
+                top: "100px"
               },
               [theme.breakpoints.up("lg")]: {
                 top: "100px"
@@ -142,13 +145,13 @@ const Header = (props) => {
 
 
         <Button
-                    color="primary"
-                    href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376"
-                    disableElevation
-                    variant="contained"
-                  >
-                    Check Pro Template
-                  </Button>
+          color="primary"
+          href="https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376"
+          disableElevation
+          variant="contained"
+        >
+          Check Pro Template
+        </Button>
         <Menu
           id="notification-menu"
           anchorEl={anchorEl}
@@ -184,7 +187,7 @@ const Header = (props) => {
             ml: 1,
           }}
         ></Box>
-        <Notification/>
+        <Notification />
 
       </Toolbar>
     </AppBar>

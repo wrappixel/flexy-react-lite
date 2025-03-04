@@ -106,13 +106,13 @@ const NavCollapse = ({ menu, level, pathWithoutLastPart, pathDirect, onClick, hi
        
         {!chip ? null : (
           <Chip
-            color={"secondary"}
             variant={'filled'}
             size="small"
             label={"Pro"}
             sx={{
               height: 'fit-content', 
-             
+              backgroundColor: 'secondary.light',
+              color: 'secondary.main',
               borderRadius:"5px",
               '& .MuiChip-label': {
                 fontSize:"11px",

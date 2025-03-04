@@ -29,7 +29,7 @@ const Register = () => {
     }}
   >
 
-            <Card elevation={9} sx={{ p: 4, zIndex: 1, width: '100%', maxWidth: '500px' , mx:"auto" }}>
+            <Card elevation={2} sx={{ p: 4, zIndex: 1, width: '100%', maxWidth: '350px' , mx:"auto" }}>
               <Box display="flex" alignItems="center" justifyContent="center">
                 {/* <Logo /> */}
                 <LogoIcon/>
@@ -43,18 +43,18 @@ const Register = () => {
                 subtitle={
                   <Stack direction="row" spacing={1} justifyContent="center" mt={3}>
                     <Typography color="textSecondary" variant="h6" fontWeight="500">
-                      New to Modernize?
+                    Already have an Account?
                     </Typography>
                     <Typography
                       component={Link}
-                      to="/auth/register"
+                      to="/auth/login"
                       fontWeight="500"
                       sx={{
                         textDecoration: 'none',
                         color: 'primary.main',
                       }}
                     >
-                      Create an account
+                      Sign in
                     </Typography>
                   </Stack>
                 }

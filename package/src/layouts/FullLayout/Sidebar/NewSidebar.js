@@ -65,19 +65,19 @@ const NewSidebar = (props) => {
               {/* ------------------------------------------- */}
               {/* Logo */}
               {/* ------------------------------------------- */}
-                    <Link to="/">
-                      <Box sx={{ display: "flex", alignItems: "Center" , padding: "20px" ,paddingBottom:"0px" }}>
-                        <LogoIcon />
-                      </Box>
-                    </Link>
+              <Link to="/">
+                <Box sx={{ display: "flex", alignItems: "Center", padding: "20px", paddingBottom: "0px" }}>
+                  <LogoIcon />
+                </Box>
+              </Link>
               <Box>
                 {/* ------------------------------------------- */}
                 {/* Sidebar Items */}
                 {/* ------------------------------------------- */}
                 <SidebarItems />
-                 <Buynow/>
+                <Buynow />
               </Box>
-              <Box sx={{padding:"40px"}} ></Box>
+              <Box sx={{ padding: "40px" }} ></Box>
             </Sidebar >
           </Box>
         </Drawer >
@@ -110,10 +110,10 @@ const NewSidebar = (props) => {
       >
         {/* ------------------------------------------- */}
         <Link to="/">
-                      <Box sx={{ display: "flex", alignItems: "Center" , padding: "20px" ,paddingBottom:"0px" }}>
-                        <LogoIcon />
-                      </Box>
-                    </Link>
+          <Box sx={{ display: "flex", alignItems: "Center", padding: "20px", paddingBottom: "0px" }}>
+            <LogoIcon />
+          </Box>
+        </Link>
         {/* ------------------------------------------- */}
 
         {/* <Logo img={logo} /> */}
@@ -122,7 +122,7 @@ const NewSidebar = (props) => {
         {/* Sidebar For Mobile */}
         {/* ------------------------------------------- */}
         <SidebarItems />
-        <Buynow/>
+        <Buynow />
       </Sidebar>
     </Drawer>
   );

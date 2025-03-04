@@ -2,7 +2,7 @@
     padding: 0px !important;
 }
 .css-1396euz-MuiPaper-root-MuiDrawer-paper{
-    top: 77px !important;
+    top: 70px !important;
 }
 .css-14ff4nu-MuiPaper-root-MuiAppBar-root{
     top: 70px !important;
@@ -31,4 +31,14 @@ header.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiAppBar-root.MuiAp
 }
 body{
     margin: 0 !important;
+}
+
+.MuiPaper-root.MuiCard-root,
+.MuiOutlinedInput-notchedOutline {
+    border-color: #e9e9e9 !important;
+}
+
+.MuiTimelineConnector-root {
+    width: 1px;
+    background: #e9e9e9 !important;
 }
