@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.MuiTypography-root,
+.MuiListSubheader-root,
+.MuiChip-label {
+    font-family: 'DM Sans', sans-serif !important;
+}
+
+.css-lpesjx-MuiPaper-root-MuiDrawer-paper {
+    top: 65px !important;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.css-1bdav0j {
+    top: 65px !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border-color: #efefef !important;
+}
+
+.MuiTableCell-root {
+    border-bottom: 1px solid #edf5fd !important;
+}
