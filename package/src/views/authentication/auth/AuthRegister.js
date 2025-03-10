@@ -1,8 +1,9 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { Link } from 'react-router';
+
+import CustomTextField from '../../../components/forms/theme-elements/CustomTextField';
 import { Stack } from '@mui/system';
-import CustomTextField from '../../../components/Forms/theme-elements/CustomTextField';
 
 const AuthRegister = ({ title, subtitle, subtext }) => (
     <>
@@ -17,15 +18,15 @@ const AuthRegister = ({ title, subtitle, subtext }) => (
         <Box>
             <Stack mb={3}>
                 <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='name' mb="5px">Name</Typography>
+                    fontWeight={600} component="label" htmlFor='name' mb="5px">Name</Typography>
                 <CustomTextField id="name" variant="outlined" fullWidth />
 
                 <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='email' mb="5px" mt="25px">Email Address</Typography>
+                    fontWeight={600} component="label" htmlFor='email' mb="5px" mt="25px">Email Address</Typography>
                 <CustomTextField id="email" variant="outlined" fullWidth />
 
                 <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='password' mb="5px" mt="25px">Password</Typography>
+                    fontWeight={600} component="label" htmlFor='password' mb="5px" mt="25px">Password</Typography>
                 <CustomTextField id="password" variant="outlined" fullWidth />
             </Stack>
             <Button color="primary" variant="contained" size="large" fullWidth component={Link} to="/auth/login">

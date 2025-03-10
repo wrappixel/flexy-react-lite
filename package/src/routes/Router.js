@@ -1,52 +1,46 @@
-import { lazy } from "react";
-import { createBrowserRouter, Navigate } from "react-router";
+import React, { lazy } from 'react';
+import { createBrowserRouter, Navigate } from 'react-router';
 
+/* ***Layouts**** */
+const FullLayout = lazy(() => import('../layouts/full/FullLayout'));
+const BlankLayout = lazy(() => import('../layouts/blank/BlankLayout'));
 
-/****Layouts*****/
-const FullLayout = lazy(() => import("../layouts/FullLayout/FullLayout.js"));
-const BlankLayout = lazy(() => import('../layouts/blank/BlankLayout.js'));
-/****End Layouts*****/
-
-
-/*****Pages******/
-const Dashboard1 = lazy(() => import("../views/dashboards/Dashboard1.js"));
-
-/*****Tables******/
-const BasicTable = lazy(() => import("../views/tables/BasicTable.js"));
-
-// form elements
-const ExAutoComplete = lazy(() =>
-  import("../views/FormElements/ExAutoComplete.js")
-);
-const ExButton = lazy(() => import("../views/FormElements/ExButton.js"));
-const ExCheckbox = lazy(() => import("../views/FormElements/ExCheckbox.js"));
-const ExRadio = lazy(() => import("../views/FormElements/ExRadio.js"));
-const ExSlider = lazy(() => import("../views/FormElements/ExSlider.js"));
-const ExSwitch = lazy(() => import("../views/FormElements/ExSwitch.js"));
+/* ****Pages***** */
+const Dashboard = lazy(() => import('../views/dashboard/Dashboard'))
+const SamplePage = lazy(() => import('../views/sample-page/SamplePage'))
 const Error = lazy(() => import('../views/authentication/Error'));
-const Register = lazy(() => import('../views/authentication/Register.jsx'));
-const Login = lazy(() => import('../views/authentication/Login.jsx'));
+const Register = lazy(() => import('../views/authentication/Register'));
+const Login = lazy(() => import('../views/authentication/Login'));
 
-// form layouts
-const FormLayouts = lazy(() => import("../views/FormLayouts/FormLayouts.js"));
+const BasicTable = lazy(() => import("../views/tables/BasicTable"));
+const ExAutoComplete = lazy(() =>
+  import("../views/form-elements/ExAutoComplete")
+);
+const ExButton = lazy(() => import("../views/form-elements/ExButton"));
+const ExCheckbox = lazy(() => import("../views/form-elements/ExCheckbox"));
+const ExRadio = lazy(() => import("../views/form-elements/ExRadio"));
+const ExSlider = lazy(() => import("../views/form-elements/ExSlider"));
+const ExSwitch = lazy(() => import("../views/form-elements/ExSwitch"));
+const FormLayouts = lazy(() => import("../views/form-layouts/FormLayouts"));
 
-/*****Routes******/
-
-const ThemeRoutes = [
+const Router = [
   {
-    path: "/",
-    element:<FullLayout/>,
+    path: '/',
+    element: <FullLayout />,
     children: [
-      { path: "/", element: <Navigate to="dashboards/dashboard1" /> },
-      { path: "dashboards/dashboard1", exact: true, element: <Dashboard1 /> },
-      { path: "tables/basic-table", element: <BasicTable /> },
-      { path: "/form-layouts/form-layouts", element: <FormLayouts /> },
+      { path: '/', element: <Navigate to="/dashboard" /> },
+      { path: '/dashboard', exact: true, element: <Dashboard /> },
+      { path: '/sample-page', exact: true, element: <SamplePage /> },
+      { path: "/tables/basic-table", element: <BasicTable /> },
+      { path: "/form-layouts", element: <FormLayouts /> },
       { path: "/form-elements/autocomplete", element: <ExAutoComplete /> },
       { path: "/form-elements/button", element: <ExButton /> },
       { path: "/form-elements/checkbox", element: <ExCheckbox /> },
       { path: "/form-elements/radio", element: <ExRadio /> },
       { path: "/form-elements/slider", element: <ExSlider /> },
       { path: "/form-elements/switch", element: <ExSwitch /> },
+
+      { path: '*', element: <Navigate to="/auth/404" /> },
     ],
   },
   {
@@ -61,6 +55,6 @@ const ThemeRoutes = [
   },
 ];
 
-const router = createBrowserRouter(ThemeRoutes);
+const router = createBrowserRouter(Router);
 
 export default router;

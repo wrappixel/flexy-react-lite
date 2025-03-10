@@ -12,7 +12,7 @@ import {
 const BaseCard = (props) => {
   return (
     <Card
-      variant="outlined"
+      variant="elevation"
       sx={{
         p: 0,
         width: "100%",
@@ -20,7 +20,7 @@ const BaseCard = (props) => {
     >
       <Box p={2} display="flex" alignItems="center">
         <Box>
-          <Typography variant="h4">{props.title}</Typography>
+          <Typography variant="h5" fontWeight='500'>{props.title}</Typography>
         </Box>
         {props.chiptitle ? (
           <Chip

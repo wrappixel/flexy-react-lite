@@ -9,9 +9,8 @@ import {
     Checkbox
 } from '@mui/material';
 import { Link } from 'react-router';
-import CustomTextField from '../../../components/Forms/theme-elements/CustomTextField';
 
-
+import CustomTextField from '../../../components/forms/theme-elements/CustomTextField';
 
 const AuthLogin = ({ title, subtitle, subtext }) => (
     <>
@@ -26,12 +25,12 @@ const AuthLogin = ({ title, subtitle, subtext }) => (
         <Stack>
             <Box>
                 <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='username' mb="5px">Username</Typography>
+                    fontWeight={600} component="label" htmlFor='username' mb="5px">Username</Typography>
                 <CustomTextField id="username" variant="outlined" fullWidth />
             </Box>
             <Box mt="25px">
                 <Typography variant="subtitle1"
-                    fontWeight={500} component="label" htmlFor='password' mb="5px" >Password</Typography>
+                    fontWeight={600} component="label" htmlFor='password' mb="5px" >Password</Typography>
                 <CustomTextField id="password" type="password" variant="outlined" fullWidth />
             </Box>
             <Stack justifyContent="space-between" direction="row" alignItems="center" my={2}>
