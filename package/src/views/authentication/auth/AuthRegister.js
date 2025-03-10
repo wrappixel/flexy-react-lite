@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { Link } from 'react-router';
 
-import CustomTextField from 'src/components/forms/theme-elements/CustomTextField.js';
+import CustomTextField from '../../../components/forms/theme-elements/CustomTextField.js';
 import { Stack } from '@mui/system';
 
 const AuthRegister = ({ title, subtitle, subtext }) => (
