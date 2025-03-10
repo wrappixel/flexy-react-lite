@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 import { Link } from 'react-router';
 
-import CustomTextField from '../../../components/forms/theme-elements/CustomTextField'
+import CustomTextField from 'src/components/forms/theme-elements/CustomTextField'
 
 const AuthLogin = ({ title, subtitle, subtext }) => (
     <>
