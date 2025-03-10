@@ -27,8 +27,8 @@ const ExCheckbox = () => {
       <Grid container spacing={3}>
         {/* ------------------------- row 1 ------------------------- */}
         <Grid
-          item size={{ xs: 12, lg: 4, sm: 6}}
-          
+          item size={{ xs: 12, lg: 4, sm: 6 }}
+
           sx={{
             display: "flex",
             alignItems: "stretch",
@@ -67,7 +67,7 @@ const ExCheckbox = () => {
         {/* ------------------------- row 1 ------------------------- */}
         <Grid
           item
-          size={{ xs: 12, lg: 4, sm: 6}}
+          size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
             display: "flex",
             alignItems: "stretch",
@@ -122,7 +122,7 @@ const ExCheckbox = () => {
         {/* ------------------------- row 1 ------------------------- */}
         <Grid
           item
-          size={{ xs: 12, lg: 4, sm: 6}}
+          size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
             display: "flex",
             alignItems: "stretch",
@@ -174,7 +174,7 @@ const ExCheckbox = () => {
 
         {/* ------------------------- row 1 ------------------------- */}
         <Grid
-          item size={{ xs: 12, lg: 6, sm: 6}}
+          item size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
             display: "flex",
             alignItems: "stretch",
@@ -227,7 +227,7 @@ const ExCheckbox = () => {
         {/* ------------------------- row 1 ------------------------- */}
         <Grid
           item
-          size={{ xs: 12, lg: 6, sm: 6}}
+          size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
             display: "flex",
             alignItems: "stretch",
@@ -241,13 +241,13 @@ const ExCheckbox = () => {
             >
               <FormControlLabel
                 value="end"
-                control={<Checkbox color="primary" checked />}
+                control={<Checkbox color="primary" defaultChecked />}
                 label="Primary"
                 labelPlacement="end"
               />
               <FormControlLabel
                 value="end"
-                control={<Checkbox color="secondary" checked />}
+                control={<Checkbox color="secondary" defaultChecked />}
                 label="Secondary"
                 labelPlacement="end"
               />
@@ -255,7 +255,7 @@ const ExCheckbox = () => {
                 value="end"
                 control={
                   <Checkbox
-                    checked
+                    defaultChecked
                     sx={{
                       color: "success.main",
                       "&.Mui-checked": {
@@ -272,7 +272,7 @@ const ExCheckbox = () => {
                 value="end"
                 control={
                   <Checkbox
-                    checked
+                    defaultChecked
                     sx={{
                       color: "error.main",
                       "&.Mui-checked": {
@@ -289,7 +289,7 @@ const ExCheckbox = () => {
                 value="end"
                 control={
                   <Checkbox
-                    checked
+                    defaultChecked
                     sx={{
                       color: "warning.main",
                       "&.Mui-checked": {

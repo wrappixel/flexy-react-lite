@@ -5,10 +5,10 @@ import { TextField } from '@mui/material';
 const CustomTextField = styled((props) => <TextField {...props} />)(({ theme }) => ({
   '& .MuiOutlinedInput-root': {
     borderRadius: '7px',
-    borderColor: theme.palette.grey[700],
+    borderColor: '#e5eaef',
     height: "46px",
     '& fieldset': {
-      borderColor: theme.palette.grey[700],
+      borderColor: '#e5eaef',
     },
     '&:hover fieldset': {
       borderColor: theme.palette.primary.dark,

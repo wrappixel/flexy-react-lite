@@ -38,7 +38,7 @@ const Blog = () => {
                             <img src={product.photo} alt="img" width="100%" />
                         </Typography>
                         <CardContent sx={{ p: 3, pt: 2 }}>
-                            <Typography variant="h5" mb={1}>{product.title}</Typography>
+                            <Typography variant="h5" fontWeight={500} mb={1}>{product.title}</Typography>
                             <Typography variant="subtitle1" mb={2}>{product.subtitle}</Typography>
                             <Button
                                 variant="contained"

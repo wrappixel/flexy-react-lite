@@ -34,7 +34,7 @@ const ExRadio = () => {
       <Grid container spacing={3}>
         {/* ------------------------- row 1 ------------------------- */}
         <Grid
-          item size={{ xs: 12, lg:4, sm: 6}}
+          item size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
             display: "flex",
             alignItems: "stretch",
@@ -66,7 +66,7 @@ const ExRadio = () => {
         {/* ------------------------- row 1 ------------------------- */}
         <Grid
           item
-          size={{ xs: 12, lg:4, sm: 6}}
+          size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
             display: "flex",
             alignItems: "stretch",
@@ -145,7 +145,7 @@ const ExRadio = () => {
         {/* ------------------------- row 1 ------------------------- */}
         <Grid
           item
-          size={{ xs: 12, lg:4, sm: 6}}
+          size={{ xs: 12, lg: 4, sm: 6 }}
           sx={{
             display: "flex",
             alignItems: "stretch",
@@ -173,8 +173,8 @@ const ExRadio = () => {
 
         {/* ------------------------- row 1 ------------------------- */}
         <Grid
-          item size={{ xs: 12, lg:6, sm: 6}}
-          
+          item size={{ xs: 12, lg: 6, sm: 6 }}
+
           sx={{
             display: "flex",
             alignItems: "stretch",
@@ -213,7 +213,7 @@ const ExRadio = () => {
         {/* ------------------------- row 1 ------------------------- */}
         <Grid
           item
-          size={{ xs: 12, lg:6, sm: 6}}
+          size={{ xs: 12, lg: 6, sm: 6 }}
           sx={{
             display: "flex",
             alignItems: "stretch",
@@ -227,13 +227,13 @@ const ExRadio = () => {
             >
               <FormControlLabel
                 value="end"
-                control={<Radio color="primary" checked />}
+                control={<Radio color="primary" defaultChecked />}
                 label="Primary"
                 labelPlacement="end"
               />
               <FormControlLabel
                 value="end"
-                control={<Radio color="secondary" checked />}
+                control={<Radio color="secondary" defaultChecked  />}
                 label="Secondary"
                 labelPlacement="end"
               />
@@ -241,7 +241,7 @@ const ExRadio = () => {
                 value="end"
                 control={
                   <Radio
-                    checked
+                    
                     sx={{
                       color: "success.main",
                       "&.Mui-checked": {
@@ -258,7 +258,7 @@ const ExRadio = () => {
                 value="end"
                 control={
                   <Radio
-                    checked
+                    
                     sx={{
                       color: "error.main",
                       "&.Mui-checked": {
@@ -275,7 +275,7 @@ const ExRadio = () => {
                 value="end"
                 control={
                   <Radio
-                    checked
+                    
                     sx={{
                       color: "warning.main",
                       "&.Mui-checked": {

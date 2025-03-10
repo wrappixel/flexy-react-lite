@@ -61,8 +61,8 @@ const StyledLink = styled(Link)(({ theme }) => ({
 
 // Styled button with outline style
 const StyledButton = styled(Button)(({ theme }) => ({
-  border: `1px solid ${theme.palette.primary.main}`,  // Border only
-  color: theme.palette.primary.main,                   // Text color
+  border: `1px solid ${theme.palette.secondary.main}`,  // Border only
+  color: theme.palette.secondary.main,                   // Text color
   padding: "6px 16px",
   textTransform: 'none',
   display: 'flex',
@@ -70,8 +70,8 @@ const StyledButton = styled(Button)(({ theme }) => ({
   justifyContent: 'space-between', // Ensure text and icon are spaced
   alignItems: 'center',
   '&:hover': {
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText // Light background on hover
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.secondary.contrastText // Light background on hover
   },
   "& .MuiButton-startIcon": {
       marginRight: "4px",

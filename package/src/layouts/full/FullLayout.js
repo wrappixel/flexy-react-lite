@@ -19,6 +19,7 @@ const PageWrapper = styled('div')(() => ({
   flexGrow: 1,
   flexDirection: 'column',
   zIndex: 1,
+  paddingBottom: '30px',
   backgroundColor: 'transparent',
 }));
 
@@ -67,7 +68,7 @@ const FullLayout = () => {
             {/* ------------------------------------------- */}
             {/* Page Route */}
             {/* ------------------------------------------- */}
-            <Box sx={{ minHeight: 'calc(100vh - 170px)' }}>
+            <Box sx={{ minHeight: 'calc(100vh - 200px)' }}>
               <Outlet />
             </Box>
             {/* ------------------------------------------- */}
