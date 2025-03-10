@@ -1,11 +1,11 @@
 import React from "react";
 import { Grid2 as Grid, Box } from "@mui/material";
 
-import { ComboBoxAutocomplete } from "../../components/Forms/AutoComplete/ComboBoxAutocomplete";
+import { ComboBoxAutocomplete } from "../../components/forms/AutoComplete/ComboBoxAutocomplete";
 
-import { MultipleValuesAutocomplete } from "../../components/Forms/AutoComplete/MultipleValuesAutocomplete";
-import { CheckboxesAutocomplete } from "../../components/Forms/AutoComplete/CheckboxesAutocomplete";
-import { SizesAutocomplete } from "../../components/Forms/AutoComplete/SizesAutocomplete";
+import { MultipleValuesAutocomplete } from "../../components/forms/AutoComplete/MultipleValuesAutocomplete";
+import { CheckboxesAutocomplete } from "../../components/forms/AutoComplete/CheckboxesAutocomplete";
+import { SizesAutocomplete } from "../../components/forms/AutoComplete/SizesAutocomplete";
 
 const ExAutoComplete = () => {
   // 2
