@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { styled, Container, Box } from '@mui/material';
-
-
-
 import Header from './header/Header';
 import Sidebar from './sidebar/Sidebar';
 import { Outlet } from "react-router";
 import Topbar from "./header/Topbar";
+import Footer from "./footer/Footer";
 
 const MainWrapper = styled('div')(() => ({
   display: 'flex',
@@ -68,13 +66,14 @@ const FullLayout = () => {
             {/* ------------------------------------------- */}
             {/* Page Route */}
             {/* ------------------------------------------- */}
-            <Box sx={{ minHeight: 'calc(100vh - 200px)' }}>
+            <Box sx={{ minHeight: 'calc(100vh - 255px)' }}>
               <Outlet />
             </Box>
             {/* ------------------------------------------- */}
             {/* End Page */}
             {/* ------------------------------------------- */}
           </Container>
+          <Footer />
         </PageWrapper>
       </MainWrapper>
     </>

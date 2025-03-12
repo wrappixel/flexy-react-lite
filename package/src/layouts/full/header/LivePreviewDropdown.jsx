@@ -52,12 +52,12 @@ const StyledMenu = styled((props) => (
 
 // Styling Link within MenuItem
 const StyledLink = styled(Link)(({ theme }) => ({
-    textDecoration: 'none', // Remove underline
-    color: 'inherit', // Ensure it inherits the primary text color
-    '&:hover': {
-      color: theme.palette.primary.main, // Ensure no underline on hover
-    },
-  }));
+  textDecoration: 'none', // Remove underline
+  color: 'inherit', // Ensure it inherits the primary text color
+  '&:hover': {
+    color: theme.palette.primary.main, // Ensure no underline on hover
+  },
+}));
 
 // Styled button with outline style
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -74,8 +74,8 @@ const StyledButton = styled(Button)(({ theme }) => ({
     color: theme.palette.secondary.contrastText // Light background on hover
   },
   "& .MuiButton-startIcon": {
-      marginRight: "4px",
-    },
+    marginRight: "4px",
+  },
   '& .MuiButton-endIcon': {
     marginLeft: '4px', // Push icon to the right
   },
@@ -83,30 +83,30 @@ const StyledButton = styled(Button)(({ theme }) => ({
 
 const MenuItems = [
   {
-    id:1,
-    title:"Bootstrap Preview",
-    href:"https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376"
-},
-{
-    id:2,
-    title:"Angular Preview",
-    href:"https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=376"
-},
-{
-    id:3,
-    title:"VueJs Preview",
-    href:"https://www.wrappixel.com/templates/flexy-vuetify-dashbaord/?ref=376"
-},
-{
-    id:4,
-    title:"NextJs Preview",
-    href:"https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376"
-},
-{
-    id:5,
-    title:"React Preview",
-    href:"https://www.wrappixel.com/templates/flexy-react-admin-template/#demos"
-},
+    id: 1,
+    title: "Bootstrap Preview",
+    href: "https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376"
+  },
+  {
+    id: 2,
+    title: "Angular Preview",
+    href: "https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=376"
+  },
+  {
+    id: 3,
+    title: "VueJs Preview",
+    href: "https://www.wrappixel.com/templates/flexy-vuetify-dashbaord/?ref=376"
+  },
+  {
+    id: 4,
+    title: "NextJs Preview",
+    href: "https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376"
+  },
+  {
+    id: 5,
+    title: "React Preview",
+    href: "https://www.wrappixel.com/templates/flexy-react-admin-template/#demos"
+  },
 
 ]
 
@@ -145,14 +145,14 @@ export default function LivePreviewDropdown() {
         onClose={handleClose}
       >
         {
-            MenuItems.map((item) => {
-                return (
-                    <StyledLink key={item.id} to={item.href} ><MenuItem sx={{gap:"4px" , padding:"8px 16px"}} onClick={handleClose} disableRipple>
-                    <IconExternalLink size={18} />
-                     {item.title}
-                  </MenuItem></StyledLink>
-                )
-            })
+          MenuItems.map((item) => {
+            return (
+              <StyledLink key={item.id} to={item.href} target='_blank'><MenuItem sx={{ gap: "4px", padding: "8px 16px" }} onClick={handleClose} disableRipple>
+                <IconExternalLink size={18} />
+                {item.title}
+              </MenuItem></StyledLink>
+            )
+          })
         }
       </StyledMenu>
     </div>
