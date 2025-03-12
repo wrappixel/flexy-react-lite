@@ -55,7 +55,7 @@ const renderMenuItems = (items, pathDirect) => {
       <MenuItem
         key={item.id}
         isSelected={pathDirect === item?.href}
-        borderRadius='999px'
+        borderRadius='9px'
         icon={
           item.icon ? (
             <Icon icon={"solar:" + item.icon} width="20" height="20" />
