@@ -98,7 +98,7 @@ const Header = (props) => {
 
         <Box flexGrow={1} />
         <Stack spacing={1} direction="row" alignItems="center">
-          <Button variant="contained" color="primary" target="_blank" href="https://www.wrappixel.com/templates/flexy-react-admin-template/?ref=376">
+          <Button variant="contained" color="primary" target="_blank" href="https://www.wrappixel.com/templates/flexy-react-admin-template/?ref=376#demos">
             Check Pro Template
           </Button>
           <Profile />

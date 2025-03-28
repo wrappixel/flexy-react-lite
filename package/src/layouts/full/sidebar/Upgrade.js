@@ -12,9 +12,9 @@ const Upgrade = () => {
         >
             <>
                 <Box>
-                    <Typography variant="h6" mb={1}>Unlimited <br /> Access</Typography>
-                    <Button color="primary" target="_blank" href="https://www.wrappixel.com/templates/flexy-react-admin-template/?ref=376" variant="contained" aria-label="logout" size="small">
-                        Upgrade
+                    <Typography variant="h6" mb={1}>Check Pro <br /> Version</Typography>
+                    <Button color="primary" target="_blank" href="https://www.wrappixel.com/templates/flexy-react-admin-template/?ref=376#demos" variant="contained" aria-label="logout" size="small">
+                        Check
                     </Button>
                 </Box>
                 <Box mt="-35px">
