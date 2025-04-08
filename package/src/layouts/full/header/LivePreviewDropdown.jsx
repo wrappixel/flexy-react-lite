@@ -84,8 +84,8 @@ const StyledButton = styled(Button)(({ theme }) => ({
 const MenuItems = [
   {
     id: 1,
-    title: "Bootstrap Preview",
-    href: "https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376#demos"
+    title: "React Preview",
+    href: "https://www.wrappixel.com/templates/flexy-react-admin-template/?ref=376#demos"
   },
   {
     id: 2,
@@ -104,8 +104,8 @@ const MenuItems = [
   },
   {
     id: 5,
-    title: "React Preview",
-    href: "https://www.wrappixel.com/templates/flexy-react-admin-template/?ref=376#demos"
+    title: "Bootstrap Preview",
+    href: "https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376#demos"
   },
 
 ]

@@ -64,8 +64,8 @@ const StyledLink = styled(Link)(({ theme }) => ({
 const MenuItems = [
   {
     id:1,
-    title:"Buy Bootstrap Version",
-    href:"https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376#package-card"
+    title:"Buy React Version",
+    href:"https://www.wrappixel.com/templates/flexy-react-admin-template/?ref=376#package-card"
 },
 {
     id:2,
@@ -83,10 +83,11 @@ const MenuItems = [
     href:"https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376#package-card"
 },
 {
-    id:5,
-    title:"Buy React Version",
-    href:"https://www.wrappixel.com/templates/flexy-react-admin-template/?ref=376#package-card"
+  id:5,
+  title:"Buy Bootstrap Version",
+  href:"https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376#package-card"
 },
+
 
 ]
 
