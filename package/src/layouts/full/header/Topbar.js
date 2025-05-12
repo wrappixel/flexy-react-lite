@@ -52,7 +52,7 @@ const Topbar = (props) => {
           }}
         >
           <Link to="https://www.wrappixel.com/" style={{ display: "flex" }}>
-            <img src="assets/images/logos/logo-wrappixel.svg" width={147} alt="logo" />
+            <img src="/images/logos/logo-wrappixel.svg" width={147} alt="logo" />
           </Link>
           <Stack
 
