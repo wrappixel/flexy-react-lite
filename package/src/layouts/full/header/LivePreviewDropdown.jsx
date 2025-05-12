@@ -8,6 +8,14 @@ import { IconDeviceLaptop, IconExternalLink } from '@tabler/icons-react';
 import { Link } from 'react-router';
 
 
+import img1 from 'src/assets/images/svgs/react-cat-icon.svg';
+import img2 from 'src/assets/images/svgs/angular-cat-icon.svg';
+import img3 from 'src/assets/images/svgs/vue-cat-icon.svg';
+import img4 from 'src/assets/images/svgs/next-cat-icon.svg';
+import img5 from 'src/assets/images/svgs/bt-cat-icon.svg';
+import img6 from 'src/assets/images/svgs/nuxt-cat-icon.svg';
+
+
 const StyledMenu = styled((props) => (
   <Menu
     elevation={0}
@@ -83,37 +91,37 @@ const StyledButton = styled(Button)(({ theme }) => ({
 const MenuItems = [
   {
     id: 1,
-    img: "src/assets/images/svgs/react-cat-icon.svg",
+    img: img1,
     title: "React Preview",
     href: "https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376#demos"
   },
   {
     id: 2,
-    img: "src/assets/images/svgs/angular-cat-icon.svg",
+    img: img2,
     title: "Angular Preview",
     href: "https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=376#demos"
   },
   {
     id: 3,
-    img: "src/assets/images/svgs/vue-cat-icon.svg",
+    img: img3,
     title: "VueJs Preview",
     href: "https://www.wrappixel.com/templates/flexy-vuetify-dashbaord/?ref=376#demos"
   },
   {
     id: 4,
-    img: "src/assets/images/svgs/next-cat-icon.svg",
+    img: img4,
     title: "NextJs Preview",
     href: "https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376#demos"
   },
   {
     id: 5,
-    img: "src/assets/images/svgs/bt-cat-icon.svg",
+    img: img5,
     title: "Bootstrap Preview",
     href: "https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376#demos"
   },
   {
     id: 6,
-    img: "src/assets/images/svgs/nuxt-cat-icon.svg",
+    img: img6,
     title: "NuxtJs Preview",
     href: "https://www.wrappixel.com/templates/flexy-nuxt-js-vuetify-admin-template/?ref=376#demos"
   },

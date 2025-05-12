@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, AppBar, Toolbar, styled, Stack, Button } from '@mui/material';
-import adminmartLogo from 'src/assets/images/logos/logo-wrappixel.svg';
+import wrappixelLogo from 'src/assets/images/logos/logo-wrappixel.svg';
 import { IconLifebuoy, IconGift, IconBriefcase } from '@tabler/icons-react';
 import { Typography } from '@mui/material';
 import { Link } from 'react-router';
@@ -52,7 +52,7 @@ const Topbar = (props) => {
           }}
         >
           <Link to="https://www.wrappixel.com/" style={{ display: "flex" }}>
-            <img src="/images/logos/logo-wrappixel.svg" width={147} alt="logo" />
+            <img src={wrappixelLogo} width={147} alt="logo" />
           </Link>
           <Stack
 
