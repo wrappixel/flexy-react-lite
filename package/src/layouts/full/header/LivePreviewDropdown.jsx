@@ -7,6 +7,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { IconDeviceLaptop, IconExternalLink } from '@tabler/icons-react';
 import { Link } from 'react-router';
 
+
 const StyledMenu = styled((props) => (
   <Menu
     elevation={0}
@@ -22,14 +23,14 @@ const StyledMenu = styled((props) => (
   />
 ))(({ theme }) => ({
   '& .MuiPaper-root': {
-    borderRadius: 6,
+    borderRadius: 7,
     marginTop: theme.spacing(1),
-    minWidth: 180,
-    color: 'rgb(55, 65, 81)',
+    minWidth: 200,
+    color: '#000c29',
     boxShadow:
       'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
     '& .MuiMenu-list': {
-      padding: '10px 0',
+      padding: '16px',
     },
     '& .MuiMenuItem-root': {
       '& .MuiSvgIcon-root': {
@@ -52,60 +53,69 @@ const StyledMenu = styled((props) => (
 
 // Styling Link within MenuItem
 const StyledLink = styled(Link)(({ theme }) => ({
-  textDecoration: 'none', // Remove underline
-  color: 'inherit', // Ensure it inherits the primary text color
+  textDecoration: 'none',
+  color: '#000c29',
+  borderRadius: '7px',
   '&:hover': {
-    color: theme.palette.primary.main, // Ensure no underline on hover
+    backgroundColor: '#000c290d',
   },
 }));
 
 // Styled button with outline style
 const StyledButton = styled(Button)(({ theme }) => ({
-  border: `1px solid ${theme.palette.secondary.main}`,  // Border only
-  color: theme.palette.secondary.main,                   // Text color
-  padding: "6px 16px",
+  border: `1px solid rgba(255,255,255,.4)`,
+  fontSize: '16px',
+  color: '#ffffff',
+  padding: '5px 16px',
   textTransform: 'none',
   display: 'flex',
-  borderRadius: "7px",
-  justifyContent: 'space-between', // Ensure text and icon are spaced
+  borderRadius: '7px',
+  justifyContent: 'space-between',
   alignItems: 'center',
   '&:hover': {
-    backgroundColor: theme.palette.secondary.main,
-    color: theme.palette.secondary.contrastText // Light background on hover
-  },
-  "& .MuiButton-startIcon": {
-    marginRight: "4px",
+    backgroundColor: '#8d70f8',
   },
   '& .MuiButton-endIcon': {
-    marginLeft: '4px', // Push icon to the right
+    marginLeft: '4px',
   },
 }));
 
 const MenuItems = [
   {
     id: 1,
+    img: "src/assets/images/svgs/react-cat-icon.svg",
     title: "React Preview",
-    href: "https://www.wrappixel.com/templates/flexy-react-admin-template/?ref=376#demos"
+    href: "https://www.wrappixel.com/templates/flexy-react-material-dashboard-admin/?ref=376#demos"
   },
   {
     id: 2,
+    img: "src/assets/images/svgs/angular-cat-icon.svg",
     title: "Angular Preview",
     href: "https://www.wrappixel.com/templates/flexy-material-angular-admin/?ref=376#demos"
   },
   {
     id: 3,
+    img: "src/assets/images/svgs/vue-cat-icon.svg",
     title: "VueJs Preview",
     href: "https://www.wrappixel.com/templates/flexy-vuetify-dashbaord/?ref=376#demos"
   },
   {
     id: 4,
+    img: "src/assets/images/svgs/next-cat-icon.svg",
     title: "NextJs Preview",
     href: "https://www.wrappixel.com/templates/flexy-nextjs-dashboard-material-ui/?ref=376#demos"
   },
   {
     id: 5,
+    img: "src/assets/images/svgs/bt-cat-icon.svg",
     title: "Bootstrap Preview",
     href: "https://www.wrappixel.com/templates/flexy-bootstrap-admin-template/?ref=376#demos"
+  },
+  {
+    id: 6,
+    img: "src/assets/images/svgs/nuxt-cat-icon.svg",
+    title: "NuxtJs Preview",
+    href: "https://www.wrappixel.com/templates/flexy-nuxt-js-vuetify-admin-template/?ref=376#demos"
   },
 
 ]
@@ -145,12 +155,15 @@ export default function LivePreviewDropdown() {
         onClose={handleClose}
       >
         {
-          MenuItems.map((item) => {
+          MenuItems.map((item, index) => {
+            console.log(item, "test");
             return (
-              <StyledLink key={item.id} to={item.href} target='_blank'><MenuItem sx={{ gap: "4px", padding: "8px 16px" }} onClick={handleClose} disableRipple>
-                <IconExternalLink size={18} />
-                {item.title}
-              </MenuItem></StyledLink>
+              <a target='_black' key={index} href={item.href}>
+                <MenuItem sx={{ gap: '12px', borderRadius: '7px', fontSize: '16px', color: '#000c29', padding: '12px 18px', ":hover": { backgroundColor: "#000c290d" } }} onClick={handleClose} disableRipple>
+                  <img src={item.img} width={18} alt="logo" />
+                  {item.title}
+                </MenuItem>
+              </a>
             )
           })
         }
