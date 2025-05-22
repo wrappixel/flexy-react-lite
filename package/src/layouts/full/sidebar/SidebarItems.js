@@ -11,7 +11,7 @@ import {
 import { IconPoint } from '@tabler/icons-react';
 import Menuitems from "./MenuItems";
 import logoicn from "../../../assets/images/logos/logo-dark.svg";
-import Upgrade from "./Upgrade"; 
+import Upgrade from "./Upgrade";
 
 const renderMenuItems = (items, pathDirect) => {
 
@@ -56,13 +56,7 @@ const renderMenuItems = (items, pathDirect) => {
         key={item.id}
         isSelected={pathDirect === item?.href}
         borderRadius='9px'
-        icon={
-          item.icon ? (
-            <Icon icon={"solar:" + item.icon} width="20" height="20" />
-          ) : (
-            <Icon icon="mdi:circle" width="6" height="6" />
-          )
-        }
+        icon={itemIcon}
         component="div"
         link={item.href && item.href !== "" ? item.href : undefined}
         target={item.href && item.href.startsWith("https") ? "_blank" : "_self"}

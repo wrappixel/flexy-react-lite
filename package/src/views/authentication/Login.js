@@ -1,16 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router';
-import { Grid2 as Grid, Box, Card, Stack, Typography } from '@mui/material';
+import React from 'react'
+import { Link } from 'react-router'
+import { Grid, Box, Card, Stack, Typography } from '@mui/material'
 
 // components
-import PageContainer from 'src/components/container/PageContainer';
-import Logo from 'src/layouts/full/shared/logo/Logo';
-import AuthLogin from './auth/AuthLogin';
+import PageContainer from 'src/components/container/PageContainer'
+import Logo from 'src/layouts/full/shared/logo/Logo'
+import AuthLogin from './auth/AuthLogin'
 
 const Login2 = () => {
-
   return (
-    <PageContainer title="Login" description="this is Login page">
+    <PageContainer title='Login' description='this is Login page'>
       <Box
         sx={{
           position: 'relative',
@@ -24,39 +23,54 @@ const Login2 = () => {
             width: '100%',
             opacity: '0.3',
           },
-        }}
-      >
-        <Grid container spacing={0} justifyContent="center" sx={{ height: '100vh' }}>
+        }}>
+        <Grid
+          container
+          spacing={0}
+          justifyContent='center'
+          sx={{ height: '100vh' }}>
           <Grid
-            item size={{ xs: 12, lg: 4, xl: 3, sm: 12 }}
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Card elevation={9} sx={{ p: 4, zIndex: 1, width: '100%', maxWidth: '500px' }}>
-              <Box display="flex" alignItems="center" justifyContent="center">
+            item
+            size={{ xs: 12, lg: 4, xl: 3, sm: 12 }}
+            display='flex'
+            justifyContent='center'
+            alignItems='center'>
+            <Card
+              elevation={9}
+              sx={{ p: 4, zIndex: 1, width: '100%', maxWidth: '500px' }}>
+              <Box display='flex' alignItems='center' justifyContent='center'>
                 <Logo />
               </Box>
               <AuthLogin
                 subtext={
-                  <Typography variant="subtitle1" textAlign="center" color="textSecondary" mb={1}>
+                  <Typography
+                    variant='subtitle1'
+                    textAlign='center'
+                    color='textSecondary'
+                    mb={1}>
                     Your Social Campaigns
                   </Typography>
                 }
                 subtitle={
-                  <Stack direction="row" spacing={1} justifyContent="center" mt={3}>
-                    <Typography color="textSecondary" variant="h6" fontWeight="500">
+                  <Stack
+                    direction='row'
+                    spacing={1}
+                    justifyContent='center'
+                    mt={3}>
+                    <Typography
+                      color='textSecondary'
+                      variant='h6'
+                      fontWeight='500'>
                       New to Flexy?
                     </Typography>
                     <Typography
                       component={Link}
-                      to="/auth/register"
-                      fontWeight="500"
+                      to='/auth/register'
+                      fontWeight='500'
                       sx={{
                         textDecoration: 'none',
                         color: 'primary.main',
-                      }}
-                    >
+                      }}>
                       Create an account
                     </Typography>
                   </Stack>
@@ -67,7 +81,7 @@ const Login2 = () => {
         </Grid>
       </Box>
     </PageContainer>
-  );
-};
+  )
+}
 
-export default Login2;
+export default Login2
